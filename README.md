@@ -1,4 +1,4 @@
-# 🚀 React Native Feature Boilerplate - April 2020
+# 🚀 React Native Feature Boilerplate - January 2021
 
 [![React Native](https://img.shields.io/badge/React%20Native-v0.63.4-green.svg)](https://facebook.github.io/react-native/)
 [![React Navigation V5](https://img.shields.io/badge/React%20Navigation-v5.9-blue.svg)](https://reactnavigation.org/)
