@@ -1,9 +1,9 @@
 import React from 'react';
-import { View } from 'react-native';
-import { Text, Button } from 'react-native-paper';
+import { View, Text } from 'react-native';
+import { Button } from 'react-native-elements';
 
 import { useDispatch, useSelector } from 'react-redux';
-import * as loginActions from '../actions';
+import * as loginActions from '../redux/actions';
 import styles from './styles';
 
 export default function Login() {
@@ -14,9 +14,7 @@ export default function Login() {
   return (
     <View style={styles.container}>
       <Text style={styles.login}>Login Status : {id}</Text>
-      <Button icon="login" mode="outlined" onPress={onLogin}>
-        Login
-      </Button>
+      <Button title="Login" type="clear" onPress={onLogin} />
     </View>
   );
 }

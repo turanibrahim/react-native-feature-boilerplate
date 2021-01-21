@@ -1,9 +1,9 @@
 import React from 'react';
 import { View } from 'react-native';
-import { Button } from 'react-native-paper';
+import { Button } from 'react-native-elements';
 
 import { useDispatch } from 'react-redux';
-import * as loginActions from 'app/features/login/actions';
+import * as loginActions from '../../login/redux/actions';
 import styles from './styles';
 
 export default function Home() {
@@ -12,9 +12,7 @@ export default function Home() {
 
   return (
     <View style={styles.container}>
-      <Button icon="logout" mode="outlined" onPress={onLogout}>
-        Logout
-      </Button>
+      <Button title="Logout" type="clear" onPress={() => onLogout} />
     </View>
   );
 }
