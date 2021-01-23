@@ -1,2 +1,2 @@
-import NavigationStack from './NavigationStack';
-export default NavigationStack;
+import AppNavigation from './AppNavigation';
+export default AppNavigation;

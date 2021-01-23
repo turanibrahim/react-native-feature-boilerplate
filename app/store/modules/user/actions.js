@@ -37,6 +37,8 @@ export function disableLoader() {
 }
 
 export function logOut() {
+  console.log('here');
+
   return {
     type: types.LOG_OUT,
   };
