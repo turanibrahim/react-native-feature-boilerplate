@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 
 import { navigationRef } from './NavigationService';
 
-import Login from 'app/features/login/containers';
+import Login from 'app/features/auth/containers';
 import Home from 'app/features/home/containers';
 
 const Stack = createStackNavigator();
@@ -22,7 +22,7 @@ const homeOptions = {
 };
 
 function App() {
-  const isLoggedIn = useSelector(state => state.loginReducer.isLoggedIn);
+  const isLoggedIn = useSelector((state) => state.loginReducer.isLoggedIn);
 
   return (
     <NavigationContainer ref={navigationRef}>
