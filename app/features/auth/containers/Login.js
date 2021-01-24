@@ -7,7 +7,7 @@ import * as loginActions from '../../../store/modules/user/actions';
 import styles from './styles';
 
 export default function Login() {
-  const id = useSelector(state => state.authReducer.id);
+  const id = useSelector(state => state.userReducer.id);
   const dispatch = useDispatch();
   const onLogin = () => dispatch(loginActions.requestLogin('test', '1234'));
 

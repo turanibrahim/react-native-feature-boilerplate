@@ -8,7 +8,7 @@ const initialState = {
   password: '',
 };
 
-export const authReducer = createReducer(initialState, {
+export const userReducer = createReducer(initialState, {
   [types.LOGIN_REQUEST](draft, action) {
     draft.username = action.username;
     draft.password = action.password;
