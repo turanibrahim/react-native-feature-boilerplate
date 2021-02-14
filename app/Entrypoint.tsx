@@ -10,7 +10,7 @@ import theme from './config/theme';
 
 const { persistor, store } = configureStore();
 
-export default function Entrypoint() {
+const Entrypoint: React.FC = () => {
   return (
     <Provider store={store}>
       <PersistGate loading={<ActivityIndicator />} persistor={persistor}>
@@ -20,4 +20,6 @@ export default function Entrypoint() {
       </PersistGate>
     </Provider>
   );
-}
+};
+
+export default Entrypoint;
